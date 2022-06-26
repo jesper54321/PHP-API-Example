@@ -31,6 +31,7 @@ class Route
 
         // Parse current url
         $parsed_url = parse_url($_SERVER['REQUEST_URI']); //Parse Uri
+        $parsed_url["path"] = rtrim($parsed_url["path"], '/');
 
         if (isset($parsed_url['path'])) {
             $path = $parsed_url['path'];

@@ -14,7 +14,7 @@
  */
 spl_autoload_register(function ($class) {
 	// Sætter array med stier til klassemapper
-	$paths = array("classes", "userapp");
+	$paths = array("classes", "config");
 
 	// Looper array og inkludere fil hvis den eksisterer
 	foreach ($paths as $path) {

@@ -12,4 +12,4 @@ define("COREROOT", DOCROOT . "/core");
 // Henter class loader
 include_once COREROOT . "/classes/autoload.php";
 
-$db = new dbconf;
+$db = new dbconf();

@@ -13,6 +13,7 @@ class dbconf extends db
         $this->dbuser = "root";
         $this->dbpassword = "1234";
         $this->dbname = "songbook";
+        $this->dbport = 3306;
         $db = parent::connect();
     }
 }
